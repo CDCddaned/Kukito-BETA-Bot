@@ -25,6 +25,8 @@ client.on("message", async message => {
     let commandFile = require(`./commands/${command}.js`);
     delete require.cache[require.resolve(`./commands/${command}.js`)];
     return commandFile.run(client, message, args);
-  } cat
-  })
+  } catch (err) {
+    console.error("Erro:" + err)
+  }
+  });
 client.login(process.env.TOKEN); //Ligando o Bot caso ele consiga acessar o token

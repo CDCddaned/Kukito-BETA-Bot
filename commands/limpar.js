@@ -11,7 +11,8 @@ if (!deleteCount || deleteCount <1 || deleteCount >100)
 const fetched = await message.channel.messages.fetch({ limit: deleteCount + 1});
 message.channel
   .bulkDelete(fetched)
-  message.channel.send(`${args[0] as mensagens foram limpas com sucesso`)  
-  .catch(error)
+  message.channel.send(`${args[0]} mensagens foram limpas com sucesso!`)  
+  .catch(error => console.log(`não foi possível deletar as mensagens devido a: ${error}`)
+)  
   
 }

@@ -1,7 +1,7 @@
 {
-  "name": "Kukito-BETA",
+  "name": "kukito-beta",
   "version": "0.0.1",
-  "description": "um simples Bot Otaku feito por CD",
+  "description": "um simples bot feito por cd",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

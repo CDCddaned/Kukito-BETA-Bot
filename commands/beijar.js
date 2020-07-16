@@ -34,8 +34,20 @@ let user = message.mentions.users.first() || client.users.cache.get(args[0]);
 if (!user) {
 return message.reply('Mencione um usuário válido!');  
 }
-  
+ 
+/*  
 message.channel.send(`___${message.author.username}___ ehh....beijou ___${user.username}___ :heart: q fofo!!, e nojento`, {files:
 [rand]});  
+*/
   
+ let avatar = message.author.displayAvatarURL({format: "png"});
+   const embed = new Discord.MessageEmbed()
+        .setTitle('Beijo!')
+        .setColor('')
+        .setDescription('')
+        .set
+        .set
+        .set
+        .set
+        .set
 }

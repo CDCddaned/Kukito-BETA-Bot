@@ -32,17 +32,16 @@ client.on("message", async message => {
 
 client.on("ready", () => {
 let activities = [
-    `a`,
-    `b`,
-    `c`,
-    `d`
+    `Utilize ${config.prefix}ajuda para saber meus comandos :wink:`,
+    `Estou em ${client.guilds.cache.size} servidores!`,
+    `Oi sou Kukito!`,
+    `Meu pai o CD é muito legal :hugging: :hugging_face:`
 ],
 i = 0
 setInterval(() => client.user.setActivity(`${activities[i++ %
 activities.length]}`, {
  type: "WATCHING" 
 }), 5000); //WATCHING, LISTENING, PLAYING, STREAMING
-console.log
 console.log("olá Otaku! Eu sou o Kukito!")
 });
 

@@ -43,11 +43,13 @@ message.channel.send(`___${message.author.username}___ ehh....beijou ___${user.u
  let avatar = message.author.displayAvatarURL({format: "png"});
    const embed = new Discord.MessageEmbed()
         .setTitle('Beijo!')
-        .setColor('')
+        .setColor('#DA70D6')
         .setDescription(`___${message.author}___ beijou ___${user}___`)
         .setImage(rand)
         .setTimestamp()
         .setThumbnail(avatar)
-        .setFooter('q fofo :heart:')
-   await 
+        .setFooter('q fofo')
+        .setAuthor(message.author.tag, avatar);
+   await message.channel.send(embed);
+  
 }

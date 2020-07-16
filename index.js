@@ -32,16 +32,19 @@ client.on("message", async message => {
 
 client.on("ready", () => {
 let activities = [
-    `Utilize ${config.prefix}ajuda para saber meus comandos :wink:`,
+    `Utilize ${config.prefix}ajuda para saber meus comandos`,
     `Estou em ${client.guilds.cache.size} servidores!`,
     `Oi sou Kukito!`,
-    `Meu pai o CD é muito legal :hugging: :hugging_face:`
+    `Meu pai o CD é muito legal!`
 ],
 i = 0
 setInterval(() => client.user.setActivity(`${activities[i++ %
 activities.length]}`, {
- type: "WATCHING" 
-}), 5000); //WATCHING, LISTENING, PLAYING, STREAMING
+ type: "PLAYING" 
+}), 1000 * 60); //WATCHING, LISTENING, PLAYING, STREAMING
+  client.user
+    .setStatus("idle") //idle, dnd, online, invisible
+    .catch(console.log);
 console.log("olá Otaku! Eu sou o Kukito!")
 });
 

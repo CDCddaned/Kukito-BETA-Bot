@@ -44,10 +44,10 @@ message.channel.send(`___${message.author.username}___ ehh....beijou ___${user.u
    const embed = new Discord.MessageEmbed()
         .setTitle('Beijo!')
         .setColor('')
-        .setDescription('')
-        .set
-        .set
-        .set
-        .set
-        .set
+        .setDescription(`___${message.author}___ beijou ___${user}___`)
+        .setImage(rand)
+        .setTimestamp()
+        .setThumbnail(avatar)
+        .setFooter('q fofo :heart:')
+   await 
 }

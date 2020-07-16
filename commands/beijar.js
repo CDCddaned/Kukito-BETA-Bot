@@ -30,6 +30,12 @@ var list = [
 ];
   
 var rand = list[Math.floor(Math.random() * list.length)];
-let user = message.mentions.users.first() || client.users.cache.get
+let user = message.mentions.users.first() || client.users.cache.get(args[0]);
+if (!user) {
+return message.reply('Mencione um usuário válido!');  
+}
+  
+message.channel.send(`___${message.author.username}___ ehh....beijou ___${user.username}___ :heart: q fofo!!, e nojento`, {files:
+[rand]});  
   
 }

@@ -29,4 +29,10 @@ client.on("message", async message => {
     console.error("Erro:" + err)
   }
   });
+
+client.on("ready", () => {
+console.log("olá Otaku! Eu sou o Kukito!")
+});
+
+
 client.login(process.env.TOKEN); //Ligando o Bot caso ele consiga acessar o token
